@@ -4,7 +4,7 @@ const { chromium } = require("playwright");
 const path = require("path");
 
 const breakpoints = [320, 480, 768, 1024, 1280, 1440];
-const SERVER_URL = process.env.SERVER_URL || `http://localhost:${process.env.PORT || 3000}`;
+const SERVER_URL = "https://scrapping-baackend.onrender.com";
 
 router.post("/layout-check", async (req, res) => {
   const { url, scrollCount = 1 } = req.body;
