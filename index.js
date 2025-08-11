@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const dotenv = require("dotenv");
 const app = express();
-const PORT = 3600;
+const PORT = 3000;
 
 
 app.use(express.json());
