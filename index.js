@@ -1,14 +1,15 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-
+const dotenv = require("dotenv");
 const app = express();
 const PORT = 3600;
 
 
 app.use(express.json());
 app.use("/public", express.static(path.join(__dirname, "public")));
-
+app.use(cors());
+dotenv.config();
 // Import routes
 const frontendRoutes = require("./routes/frontend");
 const backendRoutes = require("./routes/backend");
