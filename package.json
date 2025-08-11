@@ -6,10 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "scripts": {
     "build": "apt-get update && apt-get install -y chromium && npm install"
-}
-
   },
   "keywords": [],
   "author": "",
